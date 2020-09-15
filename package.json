@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/MarcoOlivette/curso-node#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "require-dir": "^1.2.0"
   },
   "devDependencies": {
     "mongoose": "^5.10.5",
