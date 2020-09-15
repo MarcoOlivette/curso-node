@@ -13,15 +13,8 @@ mongoose.connect(
 
 requireDir('./src/models');
 
-const Product = mongoose.model('Product');
+// const Product = mongoose.model('Product');
 
-app.get("/", (req, res) => {
-    Product.create({
-        title: "title",
-        description: "description",
-        url:"www.google.com"
-    })
-    return res.send('Ola mundo');
-});
+app.use('/api', require('./src/routes'));
 
 app.listen(3001);
